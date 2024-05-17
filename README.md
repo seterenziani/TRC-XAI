@@ -4,7 +4,7 @@ Examining how BERT models of varying sizes handle temporal information in a temp
 
 
 ## Repository Overview: 
-This repository contains all code and created datasets for the Bachelor Thesis in Data Science (Spring 2024) at IT University of Copenhagen. The repository is structured into four main components, all initialised for a BERT-base model: 
+This repository contains all code and created datasets for the Bachelor Thesis in Data Science at IT University of Copenhagen. The repository is structured into four main components, all initialised for a BERT-base model: 
 
 ### 1. Fine-Tuning Model (``model``)
 [training](https://github.com/seterenziani/TRC-XAI/blob/main/model_training.ipynb) is a jupyter notebook containing the code for data loading, processing, configuration, fine-tuning and evaluation of each model for a temporal relation classification tak.  
