@@ -24,4 +24,4 @@ A directory containing all code for procedure and evaluation of each individual 
 * [occlusion](https://github.com/seterenziani/TRC-XAI/blob/main/explainability/occlusion.ipynb): a jupyter notebook for computing the saliency-scores using Occlusion.
 
 ### 4. Explaination Alignment (``explanation_alignment.ipynb``) 
-[explanation_alignment](https://github.com/seterenziani/TRC-XAI/blob/main/explanation_alignment.ipynb) is a notebook containing the code for evaluating the alignment of the used explainability methods.
+[explanation_alignment](https://github.com/seterenziani/TRC-XAI/blob/main/explanation_alignment.ipynb) a jupyter notebook containing code for evaluating the explanation alignment of all the selected explainability methods.
