@@ -1,6 +1,6 @@
 # Temporal Relation Classification From An Explainable Perspective
 
-Examining how BERT models of varying sizes handle temporal information in a temporal relation classification task, using a combination of saliency-based and counterfactuals explainability methods. 
+Examining how BERT models of varying sizes handle temporal information in a temporal relation classification task, using a combination of saliency-based and counterfactuals explainability methods. Defining valid reasoning strategies based on the linguistic principles that guide commonly used temporal annotations, explainability methods are applied to analyse whether a model's decisions are in line with these strategies. For model information about creation of counterfactual instances and analysis is found in the final report ([report]([https://github.com/seterenziani/TRC-XAI/blob/main/model_training.ipynb](https://github.com/seterenziani/TRC-XAI/blob/main/report.pdf))). 
 
 
 ## Repository Overview: 
