@@ -1,6 +1,6 @@
 # Temporal Relation Classification From An Explainable Perspective
 
-Examining how BERT models of varying sizes handle temporal information in a temporal relation classification task, using a combination of saliency-based and counterfactuals explainability methods. 
+Examining how BERT models of varying sizes handle temporal information in a temporal relation classification task, using a combination of saliency-based and counterfactuals explainability methods. More information on the creation of counterfactual instances, annotations for token partition and analysis is found in the final report. 
 
 
 ## Repository Overview: 
@@ -19,6 +19,4 @@ This repository contains all code and created datasets for the project. All note
 * [occlusion](https://github.com/seterenziani/TRC-XAI/blob/main/explainability/occlusion.ipynb): contains all code for computing the saliency-scores using Occlusion. 
 
 [explanation_alignment](https://github.com/seterenziani/TRC-XAI/blob/main/explanation_alignment.ipynb) is a notebook containing the code for evaluating the alignment of the used explainability methods.
-
-More information on the creation of counterfactual instances, annotations for token partition and analysis is found in the final report. 
 
