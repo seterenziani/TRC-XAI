@@ -2,23 +2,26 @@
 
 Examining how BERT models of varying sizes handle temporal information in a temporal relation classification task, using a combination of saliency-based and counterfactuals explainability methods. 
 
-This repository contains all code and created datasets for the Bachelor Thesis in Data Science (Spring 2024) at IT University of Copenhagen
-
 
 ## Repository Overview: 
-All notebooks are initialised for BERT-base model. More information on the creation of counterfactual instances, annotations for token partition and analysis is found in the final report. 
+This repository contains all code and created datasets for the Bachelor Thesis in Data Science (Spring 2024) at IT University of Copenhagen. The repository is structured into four main components, all initialised for a BERT-base model: 
 
-[data/annotated](https://github.com/seterenziani/TRC-XAI/tree/main/data/annotated) contains the annotated instances and counterfactually altered instances, used for the analysis. 
+### 1. Fine-Tuning Model (``model``)
+[training](https://github.com/seterenziani/TRC-XAI/blob/main/model_training.ipynb) is a jupyter notebook containing the code for data loading, processing, configuration, fine-tuning and evaluation of each model for a temporal relation classification tak.  
+[training modules](https://github.com/seterenziani/TRC-XAI/tree/main/model) is a directory containing the python models for training a temporal relation classification task, including core modul, configuration and pipeline. 
+
+### 2. Created Datasets (``data/annotated``)
+A directory containing created and annotated datasets used for analysis. 
+
 * [counterfactuals](https://github.com/seterenziani/TRC-XAI/blob/main/data/annotated/counterfactuals.csv): dataset containing 200 counterfactually altered instances randomly selected instances from validation dataset
-* [partitions](https://github.com/seterenziani/TRC-XAI/blob/main/data/annotated/partitions.csv): dataset containing 200 counterfactually altered instances annotated for token partitionning 
+* [partitions](https://github.com/seterenziani/TRC-XAI/blob/main/data/annotated/partitions.csv): dataset containing 200 counterfactually altered instances annotated for token partitionning
 
-[explainability](https://github.com/seterenziani/TRC-XAI/tree/main/explainability) contains all code for individual evaluation and includes the creation of saliency scores.  
+### 3. Individual Explainability Methods (``explainability``) 
+A directory containing all code for procedure and evaluation of each individual selected explainability methods. 
 
-* [countefactual_evaluation](https://github.com/seterenziani/TRC-XAI/blob/main/explainability/counterfactual_evaluation.ipynb): notebook for evaluating the countefactually altered instances.
-* [integrated_gradients](https://github.com/seterenziani/TRC-XAI/blob/main/explainability/gradients.ipynb): notebook for computing the saliency-scores using Integrated Gradients.
-* [occlusion](https://github.com/seterenziani/TRC-XAI/blob/main/explainability/occlusion.ipynb): notebook for computing the saliency-scores using Occlusion.
+* [countefactual_evaluation](https://github.com/seterenziani/TRC-XAI/blob/main/explainability/counterfactual_evaluation.ipynb): a jupyter notebook for evaluating the countefactually altered instances.
+* [integrated_gradients](https://github.com/seterenziani/TRC-XAI/blob/main/explainability/gradients.ipynb): a jupyter notebook for computing the saliency-scores using Integrated Gradients.
+* [occlusion](https://github.com/seterenziani/TRC-XAI/blob/main/explainability/occlusion.ipynb): a jupyter notebook for computing the saliency-scores using Occlusion.
 
-
-[model_training](https://github.com/seterenziani/TRC-XAI/blob/main/model_training.ipynb) is a notebook containing the code for fine-tuning each model. 
-
+### 4. Explainability Alignment 
 [explanation_alignment](https://github.com/seterenziani/TRC-XAI/blob/main/explanation_alignment.ipynb) is a notebook containing the code for evaluating the alignment of the used explainability methods.
