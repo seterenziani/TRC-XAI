@@ -7,14 +7,14 @@ Examining how BERT models of varying sizes handle temporal information in a temp
 This repository contains all code and created datasets for the project. All notebooks are initialised for BERT-base model. More information on the creation of counterfactual instances, annotations for token partition and analysis is found in the final report. 
 
 [data/annotated](https://github.com/seterenziani/TRC-XAI/tree/main/data/annotated) contains the annotated instances and counterfactually altered instances, used for the analysis. 
-* [counterfactuals](https://github.com/seterenziani/TRC-XAI/blob/main/data/annotated/counterfactuals.csv): dataset containing the counterfactually altered instances from the randomly selected instances from the validation dataset
-* [partitions](https://github.com/seterenziani/TRC-XAI/blob/main/data/annotated/partitions.csv): dataset containing the annotattion for positive and negative partition of tokens for the counterfactual instances selected from the validation dataset.
+* [counterfactuals](https://github.com/seterenziani/TRC-XAI/blob/main/data/annotated/counterfactuals.csv): dataset containing 200 counterfactually altered instances randomly selected instances from validation dataset
+* [partitions](https://github.com/seterenziani/TRC-XAI/blob/main/data/annotated/partitions.csv): dataset containing 200 counterfactually altered instances annotated for token partitionning 
 
 [explainability](https://github.com/seterenziani/TRC-XAI/tree/main/explainability) contains all code for individual evaluation and includes the creation of saliency scores.  
 
-* [countefactual_evaluation](https://github.com/seterenziani/TRC-XAI/blob/main/explainability/counterfactual_evaluation.ipynb): contains all code for evaluating the countefactually altered instances.
-* [integrated_gradients](https://github.com/seterenziani/TRC-XAI/blob/main/explainability/gradients.ipynb): contains all code for computing the saliency-scores using Integrated Gradients.
-* [occlusion](https://github.com/seterenziani/TRC-XAI/blob/main/explainability/occlusion.ipynb): contains all code for computing the saliency-scores using Occlusion.
+* [countefactual_evaluation](https://github.com/seterenziani/TRC-XAI/blob/main/explainability/counterfactual_evaluation.ipynb): notebook for evaluating the countefactually altered instances.
+* [integrated_gradients](https://github.com/seterenziani/TRC-XAI/blob/main/explainability/gradients.ipynb): notebook for computing the saliency-scores using Integrated Gradients.
+* [occlusion](https://github.com/seterenziani/TRC-XAI/blob/main/explainability/occlusion.ipynb): notebook for computing the saliency-scores using Occlusion.
 
 
 [model_training](https://github.com/seterenziani/TRC-XAI/blob/main/model_training.ipynb) is a notebook containing the code for fine-tuning each model. 
