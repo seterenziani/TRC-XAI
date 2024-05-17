@@ -2,9 +2,11 @@
 
 Examining how BERT models of varying sizes handle temporal information in a temporal relation classification task, using a combination of saliency-based and counterfactuals explainability methods. 
 
+This repository contains all code and created datasets for the Bachelor Thesis in Data Science (Spring 2024) at IT University of Copenhagen
+
 
 ## Repository Overview: 
-This repository contains all code and created datasets for the project. All notebooks are initialised for BERT-base model. More information on the creation of counterfactual instances, annotations for token partition and analysis is found in the final report. 
+All notebooks are initialised for BERT-base model. More information on the creation of counterfactual instances, annotations for token partition and analysis is found in the final report. 
 
 [data/annotated](https://github.com/seterenziani/TRC-XAI/tree/main/data/annotated) contains the annotated instances and counterfactually altered instances, used for the analysis. 
 * [counterfactuals](https://github.com/seterenziani/TRC-XAI/blob/main/data/annotated/counterfactuals.csv): dataset containing 200 counterfactually altered instances randomly selected instances from validation dataset
